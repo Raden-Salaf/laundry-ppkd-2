@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id(); // -> primary key AI
             $table->string('level_name', 50); // -> varchar(50) -> nama level (admin, operator, pimpinan)
             $table->timestamps();
+            $table->softDeletes(); // -> untuk menghapus data secara soft delete
         });
     }
 
